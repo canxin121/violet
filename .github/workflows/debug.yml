@@ -1,0 +1,23 @@
+name: List Directory and Environment Variables
+
+on: [push]
+
+jobs:
+  list-directory-and-env:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: List all files in the directory
+        run: ls -la
+
+      - name: Print all environment variables
+        run: printenv
+
+      - name: List all GitHub Actions configurations
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner Temp Directory: $RUNNER_TEMP"
+          echo "Runner Workspace: $GITHUB_WORKSPACE"
+          # Add more configuration items as needed
