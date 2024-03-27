@@ -1,5 +1,5 @@
-// This source code is a part of Project Violet.
-// Copyright (C) 2020-2024. violet-team. Licensed under the Apache-2.0 License.
+// This source code is a part of Project Myapp.
+// Copyright (C) 2020-2024. myapp-team. Licensed under the Apache-2.0 License.
 
 
 #[flutter_rust_bridge::frb(init)]
